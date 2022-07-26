@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Qr Code Generator</string>
+    <string name="app_name">NCRed</string>
+<!--    <string name="default_web_client_id">549249953110-b5e0sp4gpo8d6q5v34bd3g09g75fpev9.apps.googleusercontent.com</string>-->
 </resources>

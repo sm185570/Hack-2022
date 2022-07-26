@@ -1,4 +1,4 @@
-package com.example.qrcodegenerator;
+package com.example.NCRed;
 
 import android.content.Context;
 

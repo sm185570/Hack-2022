@@ -8,7 +8,7 @@ headers = {
 
 data = {"messaging_product":"whatsapp",
 
-     "to": "918604818820", 
+     "to": "7396323400", 
      "type": "template",
      "template": { 
         "name": "hello", 
@@ -19,7 +19,7 @@ data = {"messaging_product":"whatsapp",
                 "parameters": [
                     {
                     "type": "text",
-                    "text": "Pulkit"
+                    "text": "Maddy"
                 }]
             }
             ]

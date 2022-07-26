@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "549249953110",
+    "project_id": "ncred-bb52b",
+    "storage_bucket": "ncred-bb52b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549249953110:android:a0451ccc1bc16c0b863af7",
+        "android_client_info": {
+          "package_name": "com.machinemake.NCRed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549249953110-b5e0sp4gpo8d6q5v34bd3g09g75fpev9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqOPcXB-pPxkFK6pP4EQR52bUOmdq34qI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549249953110-b5e0sp4gpo8d6q5v34bd3g09g75fpev9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
