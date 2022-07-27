@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -26,6 +27,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.machinemake.NCRed.data.model.User;
 
+import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.Serializable;
@@ -38,6 +40,7 @@ public class RegisterationActivity extends AppCompatActivity {
     TextView email;
     TextView password;
     ImageView pic;
+    Bitmap bitmap = null;
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +75,12 @@ public class RegisterationActivity extends AppCompatActivity {
 //                            }
 //                        });
                 Intent intent = new Intent(RegisterationActivity.this, MainActivity2.class);
-
+                if(bitmap != null)
+                {
+                    ByteArrayOutputStream bs = new ByteArrayOutputStream();
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 50, bs);
+                    intent.putExtra("dp", bs.toByteArray());
+                }
                 startActivity(intent);
 
             }
@@ -83,7 +91,7 @@ public class RegisterationActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 startActivityForResult(new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.INTERNAL_CONTENT_URI), GET_FROM_GALLERY);
-                pic.setRotation(-270);
+//                pic.setRotation(-270);
             }
         });
 
@@ -126,7 +134,7 @@ public class RegisterationActivity extends AppCompatActivity {
         //Detects request codes
         if(requestCode==GET_FROM_GALLERY && resultCode == Activity.RESULT_OK) {
             Uri selectedImage = data.getData();
-            Bitmap bitmap = null;
+
             try {
                 bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImage);
                 pic.setImageBitmap(bitmap);

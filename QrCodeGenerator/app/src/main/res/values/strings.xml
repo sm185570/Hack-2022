@@ -27,8 +27,8 @@
         <item>Wells Fargo XXX-XXXXX-XXXX830</item>
       </string-array>
     <string-array name="loyy">
-        <item>KFC Loyalty XXX-XXXXX-X320</item>
-        <item>Burger king Loyalty XXX-XXXXX-X823</item>
+        <item>Loyalty Card XXX-XXXXX-X320</item>
+        <item>Loyalty Card XXX-XXXXX-X823</item>
       </string-array>
     <!--    <string name="default_web_client_id">549249953110-b5e0sp4gpo8d6q5v34bd3g09g75fpev9.apps.googleusercontent.com</string>-->
 </resources>
