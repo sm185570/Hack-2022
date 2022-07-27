@@ -83,6 +83,7 @@ public class RegisterationActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 startActivityForResult(new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.INTERNAL_CONTENT_URI), GET_FROM_GALLERY);
+                pic.setRotation(-270);
             }
         });
 
