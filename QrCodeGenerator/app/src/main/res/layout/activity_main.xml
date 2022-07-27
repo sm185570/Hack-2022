@@ -8,6 +8,7 @@
     tools:context=".MainActivity"
     android:layout_width="match_parent">
 
+
     <TextView
         android:id="@+id/txtSelect"
         android:layout_width="match_parent"
@@ -55,7 +56,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
-        android:ems="10"/>
+        android:ems="10"
+        android:inputType="numberDecimal"/>
 
     <Button
         android:id="@+id/GenerateQrButton"
