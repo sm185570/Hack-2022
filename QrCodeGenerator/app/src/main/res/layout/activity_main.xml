@@ -13,13 +13,21 @@
         android:id="@+id/txtSelect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Card for payment" />
+        android:text="Select Card for Payment"
+        android:textSize="20dp"
+        android:paddingBottom="5dp"/>
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your Loyalty card"
+        android:textSize="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"/>
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="match_parent"

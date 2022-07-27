@@ -77,11 +77,11 @@ public class MainActivity extends AppCompatActivity {
         loyal.setAdapter(adapter1);
 
 
-        makeText(MainActivity.this, "Hai", LENGTH_LONG).show();
+        //makeText(MainActivity.this, "Hai", LENGTH_LONG).show();
         generateQrCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                makeText(MainActivity.this, "creating Qr for Primary card", LENGTH_LONG).show();
+                makeText(MainActivity.this, "Qr code is being Generated", LENGTH_LONG).show();
                 String amountText = amount.getText().toString();
                 String content = String.format("Name: Pulkit, Card Number: XXXX XXXX XXXX XXXX, Date of Expiry: MM/YY, Amount Paid: %s Rs",amountText);
                 QRCodeWriter qrCodeWriter = new QRCodeWriter();
