@@ -1,4 +1,4 @@
-package com.example.NCRed.data;
+package com.machinemake.NCRed.data;
 
 import com.example.NCRed.data.model.LoggedInUser;
 

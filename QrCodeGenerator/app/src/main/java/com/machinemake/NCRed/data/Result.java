@@ -1,4 +1,4 @@
-package com.example.NCRed.data;
+package com.machinemake.NCRed.data;
 
 /**
  * A generic class that holds a result success w/ data or an error exception.
