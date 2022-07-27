@@ -10,9 +10,12 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.Spinner;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -27,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     Button generateQrCode;
 
     ImageView qrCode;
+    ImageView card;
     private FirebaseAuth mAuth;
 
 
@@ -45,9 +49,32 @@ public class MainActivity extends AppCompatActivity {
 
         amount = findViewById(R.id.authorizedAmount);
         generateQrCode = findViewById(R.id.GenerateQrButton);
-
+//        RadioButton loy = findViewById(R.id.radioButton);
+//        RadioButton cc = findViewById(R.id.radioButton2);
+//       loy.setOnClickListener(new View.OnClickListener() {
+//           @Override
+//           public void onClick(View view) {
+//               if(loy.isChecked())
+//               {
+//                   cc.setChecked(false);
+//               }
+//               else cc.setChecked(true);
+//           }
+//       });
         qrCode = findViewById(R.id.QRCode);
+        Spinner spinnerLanguages=findViewById(R.id.spinner);
+        ArrayAdapter<CharSequence>adapter= ArrayAdapter.createFromResource(this, R.array.languages, android.R.layout.simple_spinner_item);
 
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+
+        spinnerLanguages.setAdapter(adapter);
+//
+        Spinner loyal=findViewById(R.id.spinner2);
+        ArrayAdapter<CharSequence>adapter1= ArrayAdapter.createFromResource(this, R.array.loyy, android.R.layout.simple_spinner_item);
+
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_item);
+
+        loyal.setAdapter(adapter1);
 
 
         makeText(MainActivity.this, "Hai", LENGTH_LONG).show();
